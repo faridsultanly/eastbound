@@ -1,0 +1,53 @@
+@media screen and (max-width:1170px) {
+    .container{
+        margin: 0 20px;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .nav_toggle{
+        display: inline;
+    }
+    nav{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.589);
+        top: 0;
+        left: -300px;
+        transition: 0.5s
+       }
+    nav ul {
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    margin-left: 40px;
+    margin-top: 50px;
+    }
+    nav ul  svg{
+    margin-left: 15px;
+    }
+    #navBtn:checked ~ nav{
+    left: 0;
+    }
+}
+
+@media screen and ( max-width: 760px) {
+    .trading_grid_container{
+        grid-template-columns: auto;
+        justify-content: center;
+    
+    }
+    .trading_grid_block{
+      padding: 8px;
+    }
+    
+    .footer_main{
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .info_text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
